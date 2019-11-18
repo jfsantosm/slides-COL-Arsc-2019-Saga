@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Regional Convergence, Spatial Scale, and Spatial Dependence:</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Felipe Santos-Marquez  Master’s student Graduate School of International Development Nagoya University, JAPAN     Prof. Carlos Mendez   Graduate School of International Development Nagoya University, JAPAN" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="svm-xaringan-style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Regional Convergence, Spatial Scale, and Spatial Dependence:
+## Evidence from Homicides and Personal Injuries in Colombia 2010-2018
+### Felipe Santos-Marquez <br />Master’s student<br />Graduate School of International Development<br />Nagoya University, JAPAN <br /> <br /> Prof. Carlos Mendez <br /> Graduate School of International Development<br />Nagoya University, JAPAN <br />
+### Prepared for the 2019 Applied Regional Science Conference, Saga University, Nov 23rd <br /><br />[ Slides and paper available at: <a href="https://felipe-santos.rbind.io/" class="uri">https://felipe-santos.rbind.io/</a>]
+
+---
+
+
+
+
+
+## Motivation:
+
+- Beyond GDP, social variables and their convergence are relevant for development studies (Royuela et al 2015)
+
+- Persistent income differences, differences in health indicators and in "general" regional inequality in Colombia.
+
+- Scarce academic literature on inequality (convergence approach) at the municipality level. 
+  
+## Research Objective:
+  
+- Study convergence/divergence of homicide rates (**NMR**) and personal injury rates (**NPIR**) across municipalities and departments in Colombia 2010-2018 
+
+- Analyze spatial autocorrelation and its robustness at different disaggregation levels
+
+  
+## Methods:
+
+- Classical convergence framework (Barro and Sala-i-Martin 1992)
+
+- Distributional convergence framework (Quah 1996; Hyndman et. al 1996)
+
+- Spatial autocorrelation (Moran's I)
+
+
+---
+
+class: middle
+
+# Main Results:
+
+1. **Sigma Convergence** for both homicide and personal injury rates at the state level, **Beta Convergence** for both levels and rates.
+
+2. Regional disaggretation  matters: **Local convergence clusters** 
+
+3. **Clustering dynamics** 
+
+  - NMR State level: 4+? convergence clusters
+  - NMR Municipal level: 2+? convergence clusters
+  - NPIR State level: 2 convergence clubs
+  - NPIR Municipal level: stagnation and 2 convergence clubs
+
+4. **Spatial Autocorrelation** robust only  at the municipality level
+  
+
+---
+
+class: middle
+
+# Outline of this presentation
+
+1. **Data description** Non crime rates
+
+2. **Global convergence:** Using classical summary measures
+
+  - Beta convergence 
+  - Sigma convergence 
+
+3. **Regional disaggregation:** 
+
+  - Distribution dynamics framework
+  - Distributional convergence
+
+4. **Global spatial autocorrelation:**
+
+  - Disaggreagation effects
+  
+5. **Policy discussion**
+
+  - The Colombian National Development Plan
+ 2018-22  
+  - CCTs and spatial autocorrelation
+  
+5. **Concluding Remarks**
+  
+---
+
+class: middle
+
+# Data:
+
+- Total number of homicides and personal injuries  in Colombia per year from 2010 until 2018 (data taken from the national police).
+
+- Data is agreggated at the municipal  and departmental  levels.
+
+- Population census and estimates for states and municipalitites.
+
+- Raw rates computed `$$raw\space rates = crimes / population$$`
+
+- Non crmime rates  computed　
+   `$$NCR= 10000- raw\ rate * 10000$$`
+- **Survival rates** are chosen because positively defined variables are a **standard** in the convergence literature. 
+
+---
+
+class: center, middle
+
+# (2) **Global convergence:**
+**Using  the classical convergence framework **
+
+*Beta convergence* (the catch-up effect)
+
+&lt;img src="figs/betaexpl.png" style="width: 50%" /&gt;
+
+*Sigma convergence*  (the dispersion of the data decreaseses over time )
+---
+
+class: middle,center
+
+##  States- Sigma and Beta convergence (NMR)
+
+`$$\sigma (Standard \ \space deviation)\space\sigma_{2010}= 1.84\space\space\space\space\space \sigma_{2018}=1.26$$`
+
+`$$log{\frac{Y_t}{Y_0}}=\alpha +\beta *logY_0+ \epsilon \space\space\space\space\space\beta=-0.476^{***} \space\space\space\space halflife=8.59\space  years$$`
+
+![](figs/beta1.png)
+
+---
+
+class: middle, center
+
+## Municipalities - ONLY Beta convergence   (NMR)
+
+`$$log{\frac{Y_t}{Y_0}}=\alpha +\beta *logY_0+ \epsilon \space\space\space\space\space\beta=-0.551^{***} \space\space\space\space halflife=6.92\space  years$$`
+![](figs/beta2.png)
+
+---
+
+class: middle, center
+
+## Beta and sigma convergence  summary
+
+![](figs/betasum.png)
+
+---
+class: center, middle
+
+# (3) **State and Municipality disaggregation:** 
+
+## The distribution dynamics framework
+
+&lt;img src="figs/dynt.png" style="width: 70%" /&gt;
+
+---
+class: middle, center
+
+# (3) Local convergence clusters
+
+**NMR State level**: 4+? convergence clusters
+
+**NMR Municipal level**: 2+? convergence clusters
+
+**NPIR State level **: 2 convergence clubs
+
+**NPIR Municipal level **: stagnation and 2 convergence clubs
+
+---
+class: middle, center
+##NMR at both levels
+
+ State level: 4+? convergence clusters
+ 
+ &lt;img src="figs/depdyn.png" style="width: 70%" /&gt;
+
+
+Municipality level: 2+? convergence clusters
+
+&lt;img src="figs/mundyn.png" style="width: 70%" /&gt;
+
+Interesting results; there are fewer clusters but sigma convergence is not present.
+
+---
+class: middle, center
+
+##NPIR at both levels
+
+ State level: 2 convergence clusters
+ 
+ &lt;img src="figs/depdyn2.png" style="width: 70%" /&gt;
+
+
+Municipality level: 2 convergence clusters and stagnation
+
+&lt;img src="figs/mundyn2.png" style="width: 70%" /&gt;
+
+Interesting results; the same number of clusters but stagnation patterns are stronger at the municipal level
+
+---
+class: middle
+
+# (4) Spatial Autocorrelation (Theory)
+
+##**High Intuition Concept**      
+![](figs/moran.png) 
+##More Formal (less intuitive)
+
+`$$I = \frac{\sum_i\sum_j w_{ij} z_i.z_j}{\sum_i z_i^2} = \frac{\sum_i (z_i \times \sum_j w_{ij} z_j)}{\sum_i z_i^2}.$$`
+---
+class: justify, center, middle
+
+`$$I = \frac{\sum_i\sum_j w_{ij} z_i.z_j}{\sum_i z_i^2} = \frac{\sum_i (z_i \times \sum_j w_{ij} z_j)}{\sum_i z_i^2}.$$`
+
+![](figs/moran3.png)
+
+##Differential Moran Scatter Plot ( `\(y_{i,t}−y_{i,t−1}\)` )
+Differencing the variable to control for the locational fixed effects: We computate the Moran's I  for the  variable 
+`\(y_{i,t}−y_{i,t−1}\)`. If we consider there is a  fixed effect  `\(\mu_i\)` related to location `\(i\)`, it is possible to present the value at each location for time `\(t\)` as the sum of some intrinsic value and the fixed effect. `\(y_{i,t} = y*_{i,t} + \mu_i\)` (Geoda documentation 2018)
+
+
+---
+
+# (4) Spatial autocorrelation  (Results)
+
+- **State level**: Moran's I statistic is significant, differntial Moran's I is not significant (**not robust**)
+
+- **Municipal level**: Standard and Differential Moran's I significant  (**robust**)
+
+&lt;br /&gt;&lt;br /&gt;
+
+&lt;img src="figs/moranall2.png" style="width: 120%" /&gt;
+
+---
+
+
+#(5) Policy discussion 
+
+- vertical and horizontal policy coordination, spillovers and borders.
+
+- It could be more appropriate for the formulation of national development plans to have convergence targets at the state level as well as the municipal level
+
+ &lt;img src="figs/pol4.png" style="width: 200%" /&gt;
+
+
+---
+
+##(5) Policy discussion - The need for a spatial perspective in current cash transfer programs:
+
+	
+-  Spatial regressions could be used to test determinant hypothesis.Moreover, such research could contribute to the literature by suggesting a case for spatially focused CCTs. 
+
+- Ultimately, this type of analysis could serve a as tool for combating organized crime in specific locations (Ingram and Marchesini da Costa , 2017). 
+ 
+- Ultimately, this type of analysis could serve a as tool for combating organized crime in specific locations 
+
+ &lt;img src="figs/rct.png" style="width: 100%" /&gt;
+ 
+ Camacho, A., &amp; Mejía, D. (2013).
+---
+
+# (5) Concluding Remarks
+
+## Uplifting results  "on average" :
+
+- Differences in overall raw rates at the state level **have decreased**. On average less homicides but more personal injuries. 
+
+- **Global convergence on average at the state level**, while fast beta convergence at the municipality level.
+
+## Beyond classical convergence  :
+
+- Regional differences matter in **both disaggreagation levels**.
+
+- **Multiple local convergence clubs**; with more clubs at the state level.
+
+## The Role of Space
+
+- Subsequent Differential Moran's I are robust and significant at the **municipality level only**
+
+- Results at the **state level** for NMR are not conlusive and similar to the ones reported by Royuela et al 2015.
+
+## Policy, Space and CCTs 
+---
+# (5) Concluding Remarks
+
+# Implications and further research
+
+- Strong spatial autocorrelation suggest the posibility of applying spatial filters in order to remove the spatial component of crime variables.  
+
+- Convergence clusters help us to find regions with similar outcomes, coordination among them can be promoted.
+
+- Has crime followed a trajectory or are there more spill over patterns? are there local clusters? LISA analysis.
+
+- At the state or department level (including more variables) a probit model may help us to find the determinants for a conditional "jump" to the upper clusters.
+
+
+---
+class: center, middle
+
+# Thank you very much for your attention
+
+ You can find this presentation on my website https://felipe-santos.rbind.io
+
+If you are interested in our research please check our QuaRCS lab website &lt;br /&gt;
+https://quarcs-lab.rbind.io/
+
+ &lt;img src="figs/logo2.png" style="width: 30%" /&gt;
+
+**Quantitative Regional and Computational Science Lab**
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
