@@ -155,11 +155,11 @@ class: middle, center
 ---
 class: center, middle
 
-# (3) **State and Municipality disaggregation:** 
+# (3) **State and Municipality disaggregation:The distribution dynamics framewor** 
 
-## The distribution dynamics framework
 
-<img src="figs/dynt.png" style="width: 70%" />
+
+<img src="figs/Intra-distribution_dynamics.jpg" style="width: 60%" />
 
 ---
 class: middle, center
