@@ -116,7 +116,7 @@ class: middle
 class: middle, center
 
 
-<img src="figs/stat.png" style="width: 100%" />
+<img src="figs/stat.png" style="width: 97%" />
 
 
 ---
