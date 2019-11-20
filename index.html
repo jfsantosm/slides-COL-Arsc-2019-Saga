@@ -117,6 +117,14 @@ class: middle
 
 ---
 
+class: middle, center
+
+# Data:
+
+&lt;img src="figs/stat.png" style="width: 95%" /&gt;
+
+
+---
 class: center, middle
 
 # (2) **Global convergence:**
@@ -215,21 +223,12 @@ class: middle
 # (4) Spatial Autocorrelation (Theory)
 
 ##**High Intuition Concept**      
-![](figs/moran.png) 
-##More Formal (less intuitive)
-
+&lt;img src="figs/moran.png" style="width: 70%" /&gt;
+##More Formal (less intuitive) 
 `$$I = \frac{\sum_i\sum_j w_{ij} z_i.z_j}{\sum_i z_i^2} = \frac{\sum_i (z_i \times \sum_j w_{ij} z_j)}{\sum_i z_i^2}.$$`
----
-class: justify, center, middle
-
-`$$I = \frac{\sum_i\sum_j w_{ij} z_i.z_j}{\sum_i z_i^2} = \frac{\sum_i (z_i \times \sum_j w_{ij} z_j)}{\sum_i z_i^2}.$$`
-
-![](figs/moran3.png)
-
 ##Differential Moran Scatter Plot ( `\(y_{i,t}−y_{i,t−1}\)` )
-Differencing the variable to control for the locational fixed effects: We computate the Moran's I  for the  variable 
-`\(y_{i,t}−y_{i,t−1}\)`. If we consider there is a  fixed effect  `\(\mu_i\)` related to location `\(i\)`, it is possible to present the value at each location for time `\(t\)` as the sum of some intrinsic value and the fixed effect. `\(y_{i,t} = y*_{i,t} + \mu_i\)` (Geoda documentation 2018)
-
+ If there is a  fixed effect  `\(\mu_i\)` related to location `\(i\)`, it is possible to present the value at each location for time `\(t\)` as the sum of some intrinsic value and the fixed effect. `\(y_{i,t} = y*_{i,t} + \mu_i\)`. Differencing the variable to control for the locational fixed effects
+`\(y_{i,t}−y_{i,t−1}\)`.
 
 ---
 
