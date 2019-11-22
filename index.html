@@ -15,7 +15,7 @@ class: center, middle, inverse, title-slide
 # Regional Convergence, Spatial Scale, and Spatial Dependence:
 ## Evidence from Homicides and Personal Injuries in Colombia 2010-2018
 ### Felipe Santos-Marquez <br />Master’s student<br />Graduate School of International Development<br />Nagoya University, JAPAN <br /> <br /> Prof. Carlos Mendez <br /> Graduate School of International Development<br />Nagoya University, JAPAN <br />
-### Prepared for the 2019 Applied Regional Science Conference, Saga University, Nov 23rd <br /><br />[ Slides and paper available at: <a href="https://felipe-santos.rbind.io/" class="uri">https://felipe-santos.rbind.io/</a>]
+### Prepared for the 2019 Applied Regional Science Conference, Saga University, Nov 23rd <br /><br />[ Slides available at: <a href="https://quarcs-lab.rbind.io/" class="uri">https://quarcs-lab.rbind.io/</a>]
 
 ---
 
@@ -25,11 +25,12 @@ class: center, middle, inverse, title-slide
 
 ## Motivation:
 
-- Beyond GDP, social variables and their convergence are relevant for development studies (Royuela et al 2015)
+- Beyond GDP, **social variables and their convergence are relevant for development studies** (Royuela et al 2015)
 
 - Persistent income differences, differences in health indicators and in "general" regional inequality in Colombia.
+**Among the higest in terms of gini in the world**.
 
-- Scarce academic literature on inequality (convergence approach) at the municipality level. 
+- **Scarce academic literature on inequality (convergence approach) and crime at the municipality level**. 
   
 ## Research Objective:
   
@@ -44,7 +45,7 @@ class: center, middle, inverse, title-slide
 
 - Distributional convergence framework (Quah 1996; Hyndman et. al 1996)
 
-- Spatial autocorrelation (Moran's I)
+- Spatial autocorrelation (Moran's I and differential Moran's I)
 
 
 ---
@@ -57,14 +58,18 @@ class: middle
 
 2. Regional disaggretation  matters: **Local convergence clusters** 
 
-3. **Clustering dynamics** 
-
-  - NMR State level: 4+? convergence clusters
-  - NMR Municipal level: 2+? convergence clusters
-  - NPIR State level: 2 convergence clubs
-  - NPIR Municipal level: stagnation and 2 convergence clubs
-
+3. **Clustering dynamics**  different clubs for both crimes and levels
 4. **Spatial Autocorrelation** robust only  at the municipality level
+
+# Main Contributions
+
+1.  Study of **classical and distribution convergence** for  two crimes and **contrasting results for two levels**: 32 States and  1120 municipalities.
+
+2.  Spatial autocorrelation is **robust for the higher level**.
+3.  Uniform progress of States and municipalitites (NMR). **first robust findings of convergence of NMR** in the literature.
+
+
+
   
 
 ---
@@ -116,14 +121,6 @@ class: middle
 - **Survival rates** are chosen because positively defined variables are a **standard** in the convergence literature. 
 
 ---
-
-class: middle, center
-
-
-&lt;img src="figs/stat.png" style="width: 97%" /&gt;
-
-
----
 class: center, middle
 
 # (2) **Global convergence:**
@@ -144,7 +141,8 @@ class: middle,center
 
 `$$log{\frac{Y_t}{Y_0}}=\alpha +\beta *logY_0+ \epsilon \space\space\space\space\space\beta=-0.476^{***} \space\space\space\space halflife=8.59\space  years$$`
 
-![](figs/beta1.png)
+![](figs/betatrial.png)
+
 
 ---
 
@@ -189,7 +187,7 @@ class: middle, center
 class: middle, center
 ##NMR at both levels
 
- State level: 4+? convergence clusters
+ State level: 4+? convergence clusters (previous studies found 2-3)
  
  &lt;img src="figs/depdyn.png" style="width: 70%" /&gt;
 
@@ -273,7 +271,7 @@ class: middle
 
 ## Uplifting results  "on average" :
 
-- Differences in overall raw rates at the state level **have decreased**. On average less homicides but more personal injuries. 
+- Differences in overall raw rates at the state level **have decreased**. On average less homicides (**inclusive improvement**) but "more" personal injuries (More research is needed, less dispersion). 
 
 - **Global convergence on average at the state level**, while fast beta convergence at the municipality level.
 
@@ -309,10 +307,9 @@ class: center, middle
 
 # Thank you very much for your attention
 
- You can find this presentation on my website https://felipe-santos.rbind.io
+ You can find this presentation on my website https://felipe-santos.rbind.io and on our lab's website https://quarcs-lab.rbind.io/
 
-If you are interested in our research please check our QuaRCS lab website &lt;br /&gt;
-https://quarcs-lab.rbind.io/
+If you are interested in our research please check our QuaRCS lab website.
 
  &lt;img src="figs/logo2.png" style="width: 30%" /&gt;
 
@@ -323,7 +320,7 @@ https://quarcs-lab.rbind.io/
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false
+"countIncrementalSlides": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
